@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipes",
+  "info": {
+    "singularName": "equipe",
+    "pluralName": "equipes",
+    "displayName": "Equipe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Depart": {
+      "type": "datetime"
+    },
+    "Fin": {
+      "type": "datetime"
+    },
+    "qr_codes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::qr-code.qr-code"
+    }
+  }
+}
