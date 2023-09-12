@@ -9,7 +9,9 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
   "dependencies": {
     "@strapi/plugin-documentation": "^4.12.4",
     "@strapi/plugin-graphql": "^4.12.5",
@@ -17,11 +19,10 @@
     "@strapi/plugin-users-permissions": "4.12.4",
     "@strapi/strapi": "4.12.4",
     "better-sqlite3": "8.5.0",
+    "gulp": "^4.0.2",
     "strapi-content-type-explorer": "^0.1.1"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
+  "author": "A Strapi developer",
   "strapi": {
     "uuid": "60eb3e3a-6923-45aa-84b0-86516324d96b"
   },
@@ -29,5 +30,7 @@
     "node": ">=16.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": []
 }
